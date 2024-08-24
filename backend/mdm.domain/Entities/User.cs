@@ -7,7 +7,7 @@ public class User : AuditEntity
     private IPasswordHasher<User> _passwordHasher = new PasswordHasher<User>();
     private string _password = null!;
 
-    public int Id { get; set; }
+    public Ulid Id { get; set; }
     public string Name { get; set; } = null!;
     public string Email { get; set; } = null!;
     public string Password
